@@ -5,8 +5,8 @@ import time
 from datetime import datetime
 
 # 1. Page Configuration
-st.set_page_config(page_title="Activity Tracker", page_icon="📈")
-st.title("📈 Activity Tracker")
+st.set_page_config(page_title="Activity Tracker", page_icon="⏱️")
+st.title("⏱️ Activity Tracker")
 
 # 2. Connect to Google Sheets
 conn = st.connection("gsheets", type=GSheetsConnection)
