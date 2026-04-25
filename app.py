@@ -46,9 +46,9 @@ else:
         # Pull existing data, add new row, and upload
         existing_data = conn.read()
         updated_df = pd.concat([existing_data, new_entry], ignore_index=True)
-        conn.update(data=updated_df)
+        # conn.update(data=updated_df)
         
-        st.success(f"Saved: {duration_minutes} mins")
+        # st.success(f"Saved: {duration_minutes} mins")
         st.session_state.running = False
         st.session_state.start_time = None
         st.rerun()
